@@ -47,7 +47,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="px-20 pt-10">
+    <div className="px-20 pt-10 relative z-30">
       <div className="gradient-border">
         <nav className="gradient-border-inner  py-2 px-2 pl-7 justify-between items-center flex">
           <a href="/" className="text-2xl font-medium text-white">
