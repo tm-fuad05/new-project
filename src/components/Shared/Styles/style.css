@@ -19,6 +19,17 @@
 }
 /* ...existing code... */
 
+.card-gradient-border {
+  background: linear-gradient(to right, #181818, #666666);
+  border-radius: 20px;
+  padding: 2px; /* Adjust as needed */
+}
+.card-gradient-border-inner {
+  background: #0f100f; /* Or your desired background */
+  border-radius: 20px;
+  padding: 10px; /* Adjust as needed */
+}
+
 a.active {
   color: #64e79e;
   position: relative;
