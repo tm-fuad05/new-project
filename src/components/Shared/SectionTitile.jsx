@@ -5,7 +5,7 @@ const SectionTitile = ({ subtitle, title }) => {
     <div className="w-7/12 mx-auto mb-10 text-center">
       <p className="text-md text-primary">{subtitle}</p>
       <h2 className="text-5xl leading-tight text-white mb-5">{title}</h2>
-      <Horizontal width={"full"} />
+      <Horizontal width={"7/12"} />
     </div>
   );
 };
