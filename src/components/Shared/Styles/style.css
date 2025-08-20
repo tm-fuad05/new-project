@@ -1,0 +1,38 @@
+/* ...existing code... */
+.gradient-border {
+  position: relative;
+  border-radius: 9999px;
+  padding: 2px; /* Adjust as needed */
+  background: linear-gradient(
+    to right,
+    #666666,
+    #181818,
+    #666666,
+    #181818,
+    #666666
+  );
+}
+
+.gradient-border-inner {
+  border-radius: 9999px;
+  background: #0f100f; /* Or your desired background */
+}
+/* ...existing code... */
+
+a.active {
+  color: #64e79e;
+  position: relative;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+a.active::before {
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: #64e79e;
+  border-radius: 9999px;
+  transition: width 0.3s;
+}
