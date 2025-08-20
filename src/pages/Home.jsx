@@ -5,6 +5,7 @@ import OurPartners from "../components/Home/OurPartners";
 import Services from "../components/Home/Services";
 import SuccessStory from "../components/Home/SuccessStory";
 import MarqueeBadges from "../components/Home/MarqueeBadges";
+import CompletedProjects from "../components/Home/CompletedProjects";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <SuccessStory />
       <Services />
       <MarqueeBadges />
+      <CompletedProjects />
       <Contact />
     </div>
   );

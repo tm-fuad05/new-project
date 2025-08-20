@@ -14,8 +14,8 @@ const MarqueeBadges = () => {
   return (
     <div className="relative px-20 my-16 flex flex-col gap-6">
       {/* Transparent Black shadow */}
-      <div className="bg-black blur-[15px] absolute -left-8 z-10 w-56 h-52 -top-8"></div>
-      <div className="bg-black blur-[15px] absolute -right-8 z-10 w-52 h-52 -top-8"></div>
+      <div className="bg-black blur-[15px] absolute left-8 z-10 w-56 h-52 -top-8"></div>
+      <div className="bg-black blur-[15px] absolute right-0 overflow-hidden z-10 w-52 h-52 -top-8"></div>
 
       <Marquee speed={50} className="flex">
         {badges.map((badge) => (
