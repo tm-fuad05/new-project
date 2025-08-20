@@ -90,7 +90,7 @@ const Contact = () => {
                 name="email"
                 id="email"
                 placeholder="Enter your email to get started"
-                className="peer border-[#e5eaf2] w-[50%] dark:placeholder:text-slate-500 dark:border-slate-600 border rounded-full outline-none text-xs pl-12 pl-10 pr-4 py-3 w-full focus:border-[#3B9DF8] transition-colors duration-300"
+                className="peer border-[#e5eaf2] w-1/2 dark:placeholder:text-slate-500 dark:border-slate-600 border rounded-full outline-none text-xs pl-12 pl-10 pr-4 py-3 w-full focus:border-[#3B9DF8] transition-colors duration-300"
               />
               <ArrowButton
                 btnName={"Get Started"}
