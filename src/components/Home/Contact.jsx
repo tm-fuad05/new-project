@@ -83,16 +83,16 @@ const Contact = () => {
         <div className="text-white flex flex-col gap-12">
           <form action="" className="flex flex-col gap-6">
             <p className="text-lg">Contact Info</p>
-            <div className="relative flex w-full  gap-5">
+            <div className="relative flex justify-bwtween gap-5">
               <MdOutlineMail className=" absolute top-3.5 left-5 text-[1.5rem] dark:text-slate-400 text-[#777777]" />
               <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="Enter your email to get started"
-                className=" border-[#e5eaf2]  w-[60%] dark:placeholder:text-slate-500 dark:border-slate-600 border rounded-full outline-none text-xs pl-12 pl-10 pr-4 py-3 w-full focus:border-[#3B9DF8] transition-colors duration-300"
+                className=" border-[#e5eaf2]  w-2/3 :placeholder:text-slate-500 dark:border-slate-600 border rounded-full outline-none text-xs pl-12 pl-10 pr-4 py-3 w-full focus:border-[#3B9DF8] transition-colors duration-300"
               />
-              <div>
+              <div className="w-1/3">
                 <ArrowButton
                   btnName={"Get Started"}
                   arrowColor={"white"}
