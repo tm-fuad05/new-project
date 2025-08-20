@@ -3,6 +3,7 @@ import "../Shared/Styles/style.css";
 import ArrowButton from "../Shared/ArrowButton";
 import BubblePhotos from "./BubblePhotos";
 import Grid from "../Shared/Grid";
+import Badge from "../Shared/Badge";
 const Banner = () => {
   return (
     // Grid Lines Banner Component
@@ -23,18 +24,10 @@ const Banner = () => {
       {/*  content */}
       <div className="relative z-20 top-44 pb-60 transform  text-center flex flex-col gap-10 items-center justify-center">
         {/* ...hero content... */}
-        <div className="gradient-border ">
-          <div className="gradient-border-inner px-3 py-1 flex items-center gap-2 w-fit mx-auto">
-            <GoDotFill className="text-white" />
-            <p className="text-white">
-              Your vision. Our code.{" "}
-              <span className="italic text-primary font-medium">
-                Infinite possibilities.
-              </span>
-            </p>
-          </div>
-          {/* Header */}
-        </div>
+        <Badge
+          first={"Your vision. Our code."}
+          second={"Infinite possibilities."}
+        />
         <div>
           <h1 className="text-white text-7xl leading-normal w-9/12 mx-auto">
             We design and <span className="text-primary italic">deliver</span>{" "}
