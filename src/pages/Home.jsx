@@ -4,6 +4,7 @@ import Logos from "../components/Home/Logos";
 import OurPartners from "../components/Home/OurPartners";
 import Services from "../components/Home/Services";
 import SuccessStory from "../components/Home/SuccessStory";
+import MarqueeBadges from "../components/Home/MarqueeBadges";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Logos />
       <SuccessStory />
       <Services />
+      <MarqueeBadges />
       <Contact />
     </div>
   );
