@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import "./Styles/style.css";
 import { GoArrowRight } from "react-icons/go";
+import ArrowButton from "./ArrowButton";
 
 const Navbar = () => {
   const navMenu = (
@@ -60,10 +61,8 @@ const Navbar = () => {
             <button className="border border-primary rounded-full py-3 px-6 text-primary hover:bg-primary hover:text-white transition-all duration-300 font-medium">
               Log In
             </button>
-            <button className="bg-white rounded-full py-1.5 pl-4 pr-1 flex items-center gap-2 font-medium group">
-              Request a Demo{" "}
-              <GoArrowRight className="bg-primary rounded-full p-1.5 my-  text-black text-[40px] group-hover:translate-x-2 duration-300" />
-            </button>
+
+            <ArrowButton btnName={"Request a Demo"} />
           </div>
         </nav>
       </div>

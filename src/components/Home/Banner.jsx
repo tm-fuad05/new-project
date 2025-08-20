@@ -1,12 +1,25 @@
+import { GoArrowRight, GoDotFill } from "react-icons/go";
+import "../Shared/Styles/style.css";
+import ArrowButton from "../Shared/ArrowButton";
+import BubblePhotos from "./BubblePhotos";
 const Banner = () => {
   return (
     // Grid Lines Banner Component
-    <div className="absolute inset-0 pointer-events-none z-0">
+    <div
+      className="absolute inset-0 
+    z-0"
+    >
       <div className="relative min-h-screen overflow-hidden">
-        {/* Blurry lights */}
+        {/*top corner Blurry lights */}
+
         <div className="relative inset-0 pointer-events-none z-20">
-          <div className="absolute z-10 right-0 blur-3xl opacity-15 -top-[200px] -right-[150px] w-[500px] h-[450px] rounded-full bg-primary" />
+          <div className="absolute z-10 right-0 blur-3xl opacity-15 -top-[200px] -right-[170px] w-[500px] h-[450px] rounded-full bg-primary" />
         </div>
+        {/*bottom corner Blurry lights */}
+        <div>
+          <div className="absolute z-20 left-0 blur-3xl opacity-15 -bottom-10 -left-44 w-[500px] h-[450px] rounded-full bg-primary" />
+        </div>
+
         {/* Square grid lines */}
         <div className="absolute inset-0 pointer-events-none z-10 grid grid-cols-4 grid-rows-4 w-full h-full">
           {/* Vertical lines */}
@@ -26,8 +39,42 @@ const Banner = () => {
             />
           ))}
         </div>
-        {/* Your content here */}
-        <div className="relative z-10">{/* ...hero content... */}</div>
+        {/*  content */}
+        <div className="relative z-50 top-44 pb-60 transform  text-center flex flex-col gap-10 items-center justify-center">
+          {/* ...hero content... */}
+          <div className="gradient-border ">
+            <div className="gradient-border-inner px-3 py-1 flex items-center gap-2 w-fit mx-auto">
+              <GoDotFill className="text-white" />
+              <p className="text-white">
+                Your vision. Our code.{" "}
+                <span className="italic text-primary font-medium">
+                  Infinite possibilities.
+                </span>
+              </p>
+            </div>
+            {/* Header */}
+          </div>
+          <div>
+            <h1 className="text-white text-7xl leading-normal w-8/12 mx-auto">
+              We design and <span className="text-primary italic">deliver</span>{" "}
+              secure, scalable IT solutions that just{" "}
+              <span className="bg-primary text-black px-1 font-semibold">
+                work.
+              </span>
+            </h1>
+            <div className="absolute top-[320px] left-[300px]">
+              <BubblePhotos />
+            </div>
+          </div>
+
+          <div className="flex gap-4">
+            <ArrowButton btnName={"Get Started Now"} />
+            <button className="bg-black text-white border border-white rounded-full py-3 px-4 flex group items-center gap-2 font-medium  shadow-sm shadow-primary transition-all duration-300 ">
+              Explore Solutions{" "}
+              <GoArrowRight className="-rotate-45 text-2xl group-hover:rotate-0 duration-300" />
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
