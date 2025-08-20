@@ -13,11 +13,11 @@ const Banner = () => {
         {/*top corner Blurry lights */}
 
         <div className="relative inset-0 pointer-events-none z-20">
-          <div className="absolute z-10 right-0 blur-3xl opacity-15 -top-[220px] -right-[200px] w-[550px] h-[500px] rounded-full bg-primary" />
+          <div className="absolute z-10 right-0 blur-3xl opacity-15 -top-[250px] -right-[220px] w-[550px] h-[500px] rounded-full bg-primary" />
         </div>
         {/*bottom corner Blurry lights */}
         <div>
-          <div className="absolute z-20 left-0 blur-3xl opacity-15 -bottom-10 -left-44 w-[500px] h-[450px] rounded-full bg-primary" />
+          <div className="absolute z-20 left-0 blur-3xl opacity-15 -bottom-10 -left-[180px] w-[500px] h-[450px] rounded-full bg-primary" />
         </div>
 
         {/* Square grid lines */}

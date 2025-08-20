@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./Styles/style.css";
-import { GoArrowRight } from "react-icons/go";
+
 import ArrowButton from "./ArrowButton";
 
 const Navbar = () => {
@@ -48,7 +48,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="px-20 pt-10 relative z-30">
+    <div className="fixed w-full top-0 px-20 pt-10 xed z-30">
       <div className="gradient-border">
         <nav className="gradient-border-inner  py-2 px-2 pl-7 justify-between items-center flex">
           <a href="/" className="text-2xl font-medium text-white">
