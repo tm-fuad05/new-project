@@ -13,7 +13,7 @@ export default {
       },
       fontFamily: {
         poppins: "Poppins",
-        oxanium: "Oxanium",
+        unbounded: "unbounded",
       },
     },
   },
