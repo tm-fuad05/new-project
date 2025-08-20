@@ -55,14 +55,14 @@ const Banner = () => {
             {/* Header */}
           </div>
           <div>
-            <h1 className="text-white text-7xl leading-normal w-8/12 mx-auto">
+            <h1 className="text-white text-7xl leading-normal w-9/12 mx-auto">
               We design and <span className="text-primary italic">deliver</span>{" "}
               secure, scalable IT solutions that just{" "}
               <span className="bg-primary text-black px-1 font-semibold">
                 work.
               </span>
             </h1>
-            <div className="absolute top-[320px] left-[300px]">
+            <div className="absolute top-[320px] left-[240px]">
               <BubblePhotos />
             </div>
           </div>
