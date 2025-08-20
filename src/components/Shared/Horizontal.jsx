@@ -1,6 +1,9 @@
-const Horizontal = () => {
+const Horizontal = ({ width }) => {
   return (
-    <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent my-5" />
+    <div
+      className={`w-${width} h-[1px] bg-gradient-to-r from-transparent via-primary to-transparent mx-auto
+      `}
+    />
   );
 };
 
