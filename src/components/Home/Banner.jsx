@@ -13,7 +13,7 @@ const Banner = () => {
         {/*top corner Blurry lights */}
 
         <div className="relative inset-0 pointer-events-none z-20">
-          <div className="absolute z-10 right-0 blur-3xl opacity-15 -top-[200px] -right-[170px] w-[500px] h-[450px] rounded-full bg-primary" />
+          <div className="absolute z-10 right-0 blur-3xl opacity-15 -top-[220px] -right-[200px] w-[550px] h-[500px] rounded-full bg-primary" />
         </div>
         {/*bottom corner Blurry lights */}
         <div>
@@ -58,8 +58,11 @@ const Banner = () => {
             <h1 className="text-white text-7xl leading-normal w-9/12 mx-auto">
               We design and <span className="text-primary italic">deliver</span>{" "}
               secure, scalable IT solutions that just{" "}
-              <span className="bg-primary text-black px-1 font-semibold">
-                work.
+              <span className="relative">
+                <span className="absolute w-full h-full bg-primary rotate-2  z-0"></span>
+                <span className="relative z-10 text-black font-semibold px-1 italic">
+                  work.
+                </span>
               </span>
             </h1>
             <div className="absolute top-[320px] left-[240px]">
