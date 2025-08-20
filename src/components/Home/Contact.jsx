@@ -54,7 +54,7 @@ const Contact = () => {
 
   return (
     <div className="relative min-h-screen overflow-hidden">
-      <Grid />
+      <Grid vertical={8} horizontal={4} />
       <Horizontal width={"7/12"} />
 
       <div className="grid grid-cols-2 gap-x-12 justify-between px-20 py-20 absolute z-30">

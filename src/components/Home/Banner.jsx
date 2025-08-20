@@ -20,7 +20,7 @@ const Banner = () => {
       </div>
 
       {/* Square grid lines */}
-      <Grid />
+      <Grid vertical={8} horizontal={4} />
       {/*  content */}
       <div className="relative z-20 top-44 pb-60 transform  text-center flex flex-col gap-10 items-center justify-center">
         {/* ...hero content... */}

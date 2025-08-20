@@ -20,7 +20,7 @@
 /* ...existing code... */
 
 .card-gradient-border {
-  background: linear-gradient(to right, #181818, #666666);
+  background: linear-gradient(-160deg, #181818, #666666, #181818);
   border-radius: 20px;
   padding: 2px; /* Adjust as needed */
 }
