@@ -52,7 +52,11 @@ const Banner = () => {
         </div>
 
         <div className="flex gap-4">
-          <ArrowButton btnName={"Get Started Now"} />
+          <ArrowButton
+            bgColor={"white"}
+            arrowColor={"primary"}
+            btnName={"Get Started Now"}
+          />
           <button className="bg-black text-white border border-white rounded-full py-3 px-4 flex group items-center gap-2 font-medium  shadow-sm shadow-primary transition-all duration-300 ">
             Explore Solutions{" "}
             <GoArrowRight className="-rotate-45 text-2xl group-hover:rotate-0 duration-300" />

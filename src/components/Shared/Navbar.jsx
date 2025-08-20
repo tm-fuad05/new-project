@@ -62,7 +62,11 @@ const Navbar = () => {
               Log In
             </button>
 
-            <ArrowButton btnName={"Request a Demo"} />
+            <ArrowButton
+              btnName={"Request a Demo"}
+              arrowColor={"primary"}
+              bgColor={"white"}
+            />
           </div>
         </nav>
       </div>
