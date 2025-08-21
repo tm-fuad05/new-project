@@ -7,6 +7,8 @@ import SuccessStory from "../components/Home/SuccessStory";
 import MarqueeBadges from "../components/Home/MarqueeBadges";
 import CompletedProjects from "../components/Home/CompletedProjects";
 import Pricing from "../components/Home/Pricing";
+import Testimonials from "../components/Home/Testimonials";
+import FAQ from "../components/Home/FAQ";
 
 const Home = () => {
   return (
@@ -19,6 +21,8 @@ const Home = () => {
       <MarqueeBadges />
       <CompletedProjects />
       <Pricing />
+      <Testimonials />
+      <FAQ />
       <Contact />
     </div>
   );

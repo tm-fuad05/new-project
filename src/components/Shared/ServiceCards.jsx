@@ -1,5 +1,6 @@
 import { BiChevronRight } from "react-icons/bi";
 import icon from "../../assets/icon.png";
+import { RiArrowRightDoubleFill } from "react-icons/ri";
 
 const ServiceCards = () => {
   return (
@@ -24,7 +25,7 @@ const ServiceCards = () => {
           </div>
           <div>
             <button className="bg-white text-black rounded-full px-4 py-2 flex items-center gap-2 hover:bg-primary hover:text-white transition-all duration-300">
-              Read More <BiChevronRight size={28} />
+              Read More <RiArrowRightDoubleFill size={30} />
             </button>
           </div>
         </div>
