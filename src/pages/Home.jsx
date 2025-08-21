@@ -10,6 +10,7 @@ import Pricing from "../components/Home/Pricing";
 import Testimonials from "../components/Home/Testimonials";
 import FAQ from "../components/Home/FAQ";
 import Blogs from "../components/Home/Blogs";
+import WhyChooseUs from "../components/Home/WhyChooseUs";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <SuccessStory />
       <Services />
       <MarqueeBadges />
+      <WhyChooseUs />
       <CompletedProjects />
       <Pricing />
       <Testimonials />
