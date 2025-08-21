@@ -15,7 +15,7 @@ const Banner = () => {
     <div className="relative min-h-screen overflow-hidden bg-[#030705]">
       {/*top corner Blurry lights */}
 
-      <div className="absolute z-10 blur-3xl opacity-15 -top-[250px] -right-[220px] w-[550px] h-[500px] rounded-full bg-primary animate-pulse-slow" />
+      <div className="absolute z-20 blur-3xl opacity-15 -top-[250px] -right-[220px] w-[550px] h-[500px] rounded-full bg-primary animate-pulse-slow" />
 
       {/*bottom corner Blurry lights */}
 

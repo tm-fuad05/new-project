@@ -48,7 +48,7 @@ const WhyChooseUs = () => {
       <Horizontal width={"7/12"} top={"0"} />
       {/*top corner Blurry lights */}
 
-      <div className="absolute z-10 blur-2xl opacity-15 top-[250px] -left-[200px] w-[300px] h-[300px] rounded-full bg-primary animate-pulse-slow" />
+      <div className="absolute z-20 blur-2xl opacity-15 top-[250px] -left-[200px] w-[300px] h-[300px] rounded-full bg-primary animate-pulse-slow" />
 
       {/*bottom corner Blurry lights */}
 

@@ -102,11 +102,8 @@ const Pricing = () => {
 
             <div>
               <button
-                className={`${
-                  card.id == 2
-                    ? "bg-primary text-black hover:bg-[#1C1C1C] hover:text-white"
-                    : "bg-[#1C1C1C] text-white hover:bg-primary hover:text-black"
-                } rounded-md text-lg py-2 w-full duration-300 font-[500]`}
+                className="bg-[#1C1C1C] text-white hover:bg-primary hover:text-black
+                 rounded-md text-lg py-2 w-full duration-300 font-[500]"
               >
                 Get Started Now
               </button>
