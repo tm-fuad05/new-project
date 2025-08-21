@@ -12,7 +12,7 @@ const SuccessStory = () => {
   return (
     <div className="relative">
       <Grid vertical={30} horizontal={15} />
-      <div className="bg-black/70 absolute inset-0 z-20"></div>
+      <div className="bg-background/70 absolute inset-0 z-20"></div>
       <div className="grid grid-cols-2 gap-5 justifuy-between px-20 my-10 pt-10">
         {/* Content */}
         <div className="flex flex-col gap-8 z-30">

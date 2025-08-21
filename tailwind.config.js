@@ -8,8 +8,7 @@ export default {
       },
       colors: {
         primary: "#64E79E",
-        secondary: "#e96d4c",
-        background: "#fdf5f2",
+        background: "#070707",
       },
       fontFamily: {
         poppins: "Poppins",
