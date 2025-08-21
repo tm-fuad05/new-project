@@ -71,3 +71,20 @@ a.active::before {
   border-radius: 9999px;
   transition: width 0.3s;
 }
+
+.carousel {
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  justify-content: flex-start;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox scrollbar hide */
+}
+.carousel::-webkit-scrollbar {
+  display: none; /* Chrome scrollbar hide */
+}
+
+.carousel-track {
+  display: flex;
+}

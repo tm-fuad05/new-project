@@ -1,6 +1,5 @@
-import { p } from "motion/react-client";
 import Grid from "../Shared/Grid";
-import { BiRightArrow } from "react-icons/bi";
+
 import { GoArrowRight } from "react-icons/go";
 import Horizontal from "../Shared/Horizontal";
 import {
@@ -13,6 +12,8 @@ import {
 import { MdOutlineMail } from "react-icons/md";
 import ArrowButton from "../Shared/ArrowButton";
 import { CiLocationOn, CiMail } from "react-icons/ci";
+
+import cornerAorrw from "../../assets/arrow-right-alt.png";
 
 const Contact = () => {
   const socialLinks = [
@@ -53,17 +54,22 @@ const Contact = () => {
   ];
 
   return (
-    <div className="relative min-h-screen overflow-hidden">
-      <Grid vertical={8} horizontal={4} />
+    <div className="relative min-h-[550px] overflow-hidden bg-[#030705]">
+      <Grid vertical={7} horizontal={3} />
       <Horizontal width={"7/12"} />
 
       <div className="grid grid-cols-2 gap-x-12 justify-between px-20 py-20 absolute z-30">
         {/* Content */}
         <div className="flex flex-col gap-16 justify-center text-white">
-          <h1 className="text-6xl flex gap-2 uppercase font-unbounded font-semibold">
-            <GoArrowRight className="rotate-45 text-7xl" /> contact <br /> us
-            today
-          </h1>
+          <div>
+            <h1 className="text-6xl flex gap-2 uppercase font-unbounded">
+              <img src={cornerAorrw} alt="" />
+              contact
+            </h1>
+            <h1 className="text-6xl flex gap-2 uppercase font-unbounded">
+              us today
+            </h1>{" "}
+          </div>
           <p className="text-lg ">
             Contact us today to schedule a consultation and discover how we can
             help your business thrive.
@@ -83,14 +89,14 @@ const Contact = () => {
         <div className="text-white flex flex-col gap-12">
           <form action="" className="flex flex-col gap-6">
             <p className="text-lg">Contact Info</p>
-            <div className="relative flex justify-bwtween gap-5">
+            <div className="relative flex justify-bwtween gap-2">
               <MdOutlineMail className=" absolute top-3.5 left-5 text-[1.5rem] dark:text-slate-400 text-[#777777]" />
               <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="Enter your email to get started"
-                className=" border-[#e5eaf2]  w-2/3 :placeholder:text-slate-500 dark:border-slate-600 border rounded-full outline-none text-xs pl-12 pl-10 pr-4 py-3 w-full focus:border-[#3B9DF8] transition-colors duration-300"
+                className=" border-[#e5eaf2]  w-2/3 placeholder:text-slate-500 dark:border-slate-600 border rounded-full outline-none text-xs pl-12 pr-4 py-3 focus:border-[#3B9DF8] transition-colors duration-300"
               />
               <div className="w-1/3">
                 <ArrowButton

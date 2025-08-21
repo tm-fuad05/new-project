@@ -12,7 +12,7 @@ export default {
       },
       fontFamily: {
         poppins: "Poppins",
-        unbounded: "unbounded",
+        unbounded: "Unbounded",
       },
     },
   },

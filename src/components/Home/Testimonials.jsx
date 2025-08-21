@@ -3,6 +3,7 @@ import quote from "../../assets/quote.png";
 import reviewman from "../../assets/reviewman.png";
 import Horizontal from "../Shared/Horizontal";
 import Grid from "../Shared/Grid";
+import CardGrid from "../Shared/CardGrid";
 
 const Testimonials = () => {
   const reviewCards = [
@@ -80,7 +81,7 @@ const Testimonials = () => {
       <div className="grid grid-cols-3 gap-5">
         {reviewCards.map((c) => (
           <div className="rounded-2xl border border-[#343434]  p-5 relative">
-            {/* <Grid horizontal={30} vertical={30} /> */}
+            <CardGrid vertical={18} horizontal={15} />
             <div className="flex flex-col gap-6 text-white">
               <img src={quote} alt="" className="w-6" />
               <p className="text-sm flex-grow">{c.quote}</p>

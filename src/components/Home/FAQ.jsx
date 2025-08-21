@@ -35,7 +35,7 @@ const FAQ = () => {
 
   return (
     <div className="flex justify-center items-center px-20 w-full mt-10 mb-20">
-      <div className="w-1/2 flex flex-col gap-6 text-white">
+      <div className="w-7/12 flex flex-col gap-6 text-white">
         <Badge first={"Your Questions"} second={"Answered"} />
         <h2 className="text-6xl">FAQs & Support</h2>
         <p className="text-lg ">not finding what you’re looking for?</p>
@@ -48,7 +48,7 @@ const FAQ = () => {
         </div>
       </div>
       {/* Accordion */}
-      <div className="w-1/2">
+      <div>
         <div className="flex gap-3 flex-col w-full">
           {accordingData?.map((according, index) => (
             <article key={index} className="bg-[#e5eaf2] rounded-md">

@@ -9,6 +9,7 @@ import CompletedProjects from "../components/Home/CompletedProjects";
 import Pricing from "../components/Home/Pricing";
 import Testimonials from "../components/Home/Testimonials";
 import FAQ from "../components/Home/FAQ";
+import Blogs from "../components/Home/Blogs";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <Pricing />
       <Testimonials />
       <FAQ />
+      <Blogs />
       <Contact />
     </div>
   );
