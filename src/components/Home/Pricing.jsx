@@ -55,7 +55,7 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center gap-6 my-20">
+    <div className="flex flex-col items-center gap-6 my-20 px-20">
       <Badge first={"Pricing"} second={"& Plans"} />
       <h2 className="text-6xl text-white">
         Choose a Plan That Suits Your Team
@@ -75,7 +75,7 @@ const Pricing = () => {
         </div>
       </div>
       {/* Cards */}
-      <div className="grid grid-cols-3 gap-6 mt-10">
+      <div className="grid grid-cols-3 gap-6 w-full mt-10">
         {pricingCards.map((card) => (
           <div
             key={card.id}

@@ -16,27 +16,27 @@ const Logos = () => {
     },
     {
       id: 2,
-      src: logo2,
+      src: logo1,
     },
     {
       id: 3,
-      src: logo3,
+      src: logo1,
     },
     {
       id: 4,
-      src: logo4,
+      src: logo1,
     },
     {
       id: 5,
-      src: logo5,
+      src: logo1,
     },
     {
       id: 6,
-      src: logo6,
+      src: logo1,
     },
     {
       id: 7,
-      src: logo7,
+      src: logo1,
     },
   ];
 
