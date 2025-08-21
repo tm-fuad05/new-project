@@ -26,7 +26,7 @@ const OurPartners = () => {
   ];
 
   return (
-    <div className="px-20 my-10">
+    <div id="our-partner" className="px-20 my-10">
       {/* Title  */}
       <SectionTitile
         title={"Trusted by leaders from various industries"}

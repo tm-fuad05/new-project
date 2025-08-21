@@ -1,9 +1,13 @@
-import { GoArrowRight, GoDotFill } from "react-icons/go";
+import { GoArrowRight } from "react-icons/go";
 import "../Shared/Styles/style.css";
 import ArrowButton from "../Shared/ArrowButton";
 import BubblePhotos from "./BubblePhotos";
 import Grid from "../Shared/Grid";
 import Badge from "../Shared/Badge";
+import scroll from "../../assets/scroll.png";
+import { motion } from "motion/react";
+import { Link } from "react-scroll";
+
 const Banner = () => {
   return (
     // Grid Lines Banner Component
@@ -12,15 +16,15 @@ const Banner = () => {
       {/*top corner Blurry lights */}
 
       <div className="relative inset-0 pointer-events-none z-20">
-        <div className="absolute z-10 right-0 blur-3xl opacity-15 -top-[250px] -right-[220px] w-[550px] h-[500px] rounded-full bg-primary animate-pulse-slow" />
+        <div className="absolute z-10 blur-3xl opacity-15 -top-[250px] -right-[220px] w-[550px] h-[500px] rounded-full bg-primary animate-pulse-slow" />
       </div>
       {/*bottom corner Blurry lights */}
       <div>
-        <div className="absolute z-20 left-0 blur-3xl opacity-15 -bottom-10 -left-[180px] w-[500px] h-[450px] rounded-full bg-primary animate-pulse-slow" />
+        <div className="absolute z-20 blur-3xl opacity-15 -bottom-10 -left-[180px] w-[500px] h-[450px] rounded-full bg-primary animate-pulse-slow" />
       </div>
 
       {/* Square grid lines */}
-      <Grid vertical={8} horizontal={4} />
+      <Grid vertical={7} horizontal={5} />
       {/*  content */}
       <div className="relative z-20 top-44 pb-60 transform  text-center flex flex-col gap-10 items-center justify-center">
         {/* ...hero content... */}
@@ -44,7 +48,7 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex gap-7">
           <ArrowButton
             bgColor={"white"}
             arrowColor={"primary"}
@@ -55,6 +59,19 @@ const Banner = () => {
             <GoArrowRight className="-rotate-45 text-2xl group-hover:rotate-0 duration-300" />
           </button>
         </div>
+        <motion.div
+          animate={{ y: [0, 30, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <Link
+            to="our-partner"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer"
+          >
+            <img src={scroll} alt="" />
+          </Link>
+        </motion.div>
       </div>
     </div>
   );
