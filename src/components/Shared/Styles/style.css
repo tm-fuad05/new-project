@@ -2,7 +2,7 @@
 .gradient-border {
   position: relative;
   border-radius: 9999px;
-  padding: 2px; /* Adjust as needed */
+  padding: 2px;
   background: linear-gradient(
     to right,
     #666666,
@@ -22,18 +22,36 @@
 .card-gradient-border {
   background: linear-gradient(-160deg, transparent, #666666, transparent);
   border-radius: 20px;
-  padding: 2px; /* Adjust as needed */
+  padding: 2px;
 }
 .card-gradient-border-inner {
   background: #0f100f; /* Or your desired background */
   border-radius: 20px;
-  padding: 10px; /* Adjust as needed */
+  padding: 10px;
 }
 
 .badge-gradient-border {
   background: linear-gradient(-160deg, transparent, #666666, transparent);
   border-radius: 10px;
-  padding: 1px; /* Adjust as needed */
+  padding: 1px;
+}
+
+/* Swiper pagination custom color */
+.swiper-pagination-bullet {
+  background: #64e79e !important;
+  opacity: 0.5;
+  width: 13px !important;
+  height: 13px !important;
+  margin-right: 10px !important;
+  /* margin-bottom: -20px !important; */
+}
+.swiper-pagination-bullet-active {
+  background: #64e79e !important;
+  opacity: 1;
+  width: 13px !important;
+  height: 13px !important;
+
+  /* margin-bottom: -20px !important; */
 }
 
 a.active {
