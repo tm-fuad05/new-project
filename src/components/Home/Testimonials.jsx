@@ -70,15 +70,15 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center gap-6 px-20">
+    <div className="flex flex-col items-center gap-6 px-6 lg:px-20">
       <Badge second={"Testimonials"} />
-      <h2 className="text-6xl text-white">What Our Client Says</h2>
-      <p className="text-lg text-[#888888]">
+      <h2 className="text-3xl lg:text-6xl text-white">What Our Client Says</h2>
+      <p className="text-sm lg:text-lg text-[#888888] text-center">
         Cras tincidunt, sapien eget scelerisque tincidunt, est urna aliquet,
         pretium lacus.
       </p>
       {/* Review Cards */}
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
         {reviewCards.map((c) => (
           <div className="rounded-2xl border border-[#343434]  p-5 relative">
             <CardGrid vertical={18} horizontal={15} />

@@ -26,14 +26,14 @@ const OurPartners = () => {
   ];
 
   return (
-    <div id="our-partner" className="px-20 my-10">
+    <div id="our-partner" className="px-6 lg:px-20 my-10">
       {/* Title  */}
       <SectionTitile
         title={"Trusted by leaders from various industries"}
         subtitle={"Our Partners"}
       />
       {/* Card */}
-      <div className="grid grid-cols-4 gap-x-5 ">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-x-5 gap-y-5">
         {cardsInfo.map((card) => (
           <Cards key={card.id} src={card.src} />
         ))}

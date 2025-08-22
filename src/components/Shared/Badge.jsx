@@ -6,7 +6,7 @@ const Badge = ({ first, second }) => {
       <div className="gradient-border w-fit">
         <div className="gradient-border-inner px-3 py-1 flex items-center gap-2 w-fit mx-auto">
           <GoDotFill className="text-white" />
-          <p className="text-white text-xl">
+          <p className="text-white text-xs lg:text-xl">
             {first}{" "}
             <span className="italic text-primary font-medium">{second}</span>
           </p>

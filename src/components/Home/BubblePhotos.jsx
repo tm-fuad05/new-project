@@ -48,7 +48,7 @@ const BubblePhotos = () => {
       {users.map((user, index) => (
         <div
           key={index}
-          className={`relative z-[${index}0] -ml-4`}
+          className={`relative z-[${index}0] -ml-3 lg:-ml-4`}
           onMouseEnter={(e) => handleMouseMove(e, index)}
           onMouseMove={(e) => handleMouseMove(e, index)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -56,7 +56,7 @@ const BubblePhotos = () => {
           <img
             src={user.image}
             alt={user.name}
-            className="w-[55px] h-[55px] rounded-full object-cover border-2 dark:border-slate-700 border-white shadow-md hover:scale-105 transition-all duration-200 cursor-pointer"
+            className="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px] rounded-full object-cover border-2 dark:border-slate-700 border-white shadow-md hover:scale-105 transition-all duration-200 cursor-pointer"
           />
         </div>
       ))}

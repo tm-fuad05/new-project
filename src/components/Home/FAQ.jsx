@@ -34,11 +34,13 @@ const FAQ = () => {
     setBgAccording((prevIndex) => (prevIndex === index ? null : index));
 
   return (
-    <div className="flex justify-center items-center px-20 w-full mt-10 mb-20">
-      <div className="w-7/12 flex flex-col gap-6 text-white">
+    <div className="flex flex-col lg:flex-row justify-center gap-10 lg:gap-0 items-center px-6 lg:px-20 w-full mt-10 mb-20">
+      <div className="w-full lg:w-7/12 flex flex-col gap-6 text-white items-start">
         <Badge first={"Your Questions"} second={"Answered"} />
-        <h2 className="text-6xl">FAQs & Support</h2>
-        <p className="text-lg ">not finding what you’re looking for?</p>
+        <h2 className="text-3xl lg:text-6xl">FAQs & Support</h2>
+        <p className="text-sm lg:text-lg">
+          not finding what you’re looking for?
+        </p>
         <div>
           <ArrowButton
             bgColor={"white"}
@@ -51,7 +53,7 @@ const FAQ = () => {
       <div>
         <div className="flex gap-3 flex-col w-full">
           {accordingData?.map((according, index) => (
-            <article key={index} className="bg-[#e5eaf2] rounded-md">
+            <article key={index} className="rounded-md">
               <div
                 className={`${
                   bgAccording === index ? "rounded-t-sm" : "rounded"
@@ -64,13 +66,13 @@ const FAQ = () => {
                 <MdOutlineKeyboardArrowRight size={40} className="text-white" />
               </div>
               <div
-                className={`grid transition-all duration-300 overflow-hidden ease-in-out bg-primary/10 ${
+                className={`grid transition-all duration-300 overflow-hidden ease-in-out bg-white ${
                   bgAccording === index
                     ? "grid-rows-[1fr] opacity-100 px-3 py-3"
                     : "grid-rows-[0fr] opacity-0 px-3"
                 }`}
               >
-                <div className="text-[] text-[0.9rem] overflow-hidden">
+                <div className="text-black text-[0.9rem] overflow-hidden">
                   {according.description}
                 </div>
               </div>

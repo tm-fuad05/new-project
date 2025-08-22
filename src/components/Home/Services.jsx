@@ -26,12 +26,12 @@ const Services = () => {
   ];
 
   return (
-    <div className="">
-      <div className="flex justify-between items-end px-20 pt-10">
+    <div className="px-6 lg:px-20">
+      <div className="flex flex-col gap-6 lg:flex-row justify-between lg:items-end pt-10">
         {/* content  */}
-        <div className="flex flex-col gap-8  j w-8/12">
+        <div className="flex flex-col gap-8 lg:w-8/12">
           <Badge first={"Our"} second={"Services"} />
-          <h2 className="text-6xl text-white">
+          <h2 className="text-3xl lg:text-6xl text-white">
             Design{" "}
             <span className="italic text-primary leading-tight">
               The Concept
@@ -41,14 +41,14 @@ const Services = () => {
         </div>
         {/* Button */}
         <div>
-          <div className="gradient-border">
-            <button className="bg-[#161616] rounded-full text-white px-10 py-3 text-xl hover:bg-opacity-80 transition-all duration-300">
+          <div className="gradient-border w-fit">
+            <button className="bg-[#161616] rounded-full text-white px-10 py-3 text-md lg:text-xl hover:bg-opacity-80 transition-all duration-300">
               Show All
             </button>
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-6 px-20 my-10">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 my-10">
         {cards.map((card) => (
           <ServiceCards key={card.id} />
         ))}

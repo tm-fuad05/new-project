@@ -55,16 +55,17 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center gap-6 my-20 px-20">
+    <div className="flex flex-col items-center gap-6 my-20 px-6 lg:px-20">
       <Badge first={"Pricing"} second={"& Plans"} />
-      <h2 className="text-6xl text-white">
+      <h2 className="text-3xl lg:text-6xl text-white text-center">
         Choose a Plan That Suits Your Team
       </h2>
-      <p className="text-primary text-xl">
+      <p className="text-primary text-sm lg:text-xl">
         Simple and Transparent Pricing to Fit Your Needs
       </p>
+      {/* Badge */}
       <div className="gradient-border">
-        <div className="gradient-border-inner px-3 py-3 flex items-center justify-between gap-4 text-xl">
+        <div className="gradient-border-inner px-3 py-3 flex items-center justify-between gap-4 text-md lg:text-xl">
           <h3 className="text-white pl-2">Monthly</h3>
           <div className="w-[1px] h-[40px]  bg-white"></div>
           <h3 className="text-[#3F3F3F] font-light">Yearly</h3>
@@ -75,7 +76,7 @@ const Pricing = () => {
         </div>
       </div>
       {/* Cards */}
-      <div className="grid grid-cols-3 gap-6 w-full mt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full mt-10">
         {pricingCards.map((card) => (
           <div
             key={card.id}

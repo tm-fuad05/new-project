@@ -27,10 +27,10 @@ const CompletedProjects = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center gap-7 px-10 my-20">
-      <div className="flex flex-col items-center justify-center gap-7 px-16 text-center">
+    <div className="flex flex-col items-center justify-center gap-7 px-6 lg:px-10 my-20">
+      <div className="flex flex-col items-center justify-center gap-7 text-center">
         <Badge first={"Our"} second={"Completed Projects"} />
-        <h2 className="text-6xl text-white">
+        <h2 className="text-3xl lg:text-6xl text-white">
           Improve & Enhance Our Tech Projects
         </h2>
         <p className="text-[#888888] text-center">
@@ -42,11 +42,23 @@ const CompletedProjects = () => {
 
       <Swiper
         slidesPerView={3}
+        centeredSlides={true}
         spaceBetween={30}
         freeMode={false}
         pagination={{ clickable: true }}
         autoplay={{ delay: 2000 }}
         modules={[FreeMode, Pagination, Autoplay]}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3.5,
+          },
+        }}
         className="mySwiper w-full"
       >
         {pictures.map((p) => (
@@ -56,7 +68,7 @@ const CompletedProjects = () => {
               alt=""
               className="w-full h-[450px] object-cover rounded-2xl z-10"
             />
-            <div className="absolute z-20 bottom-8 py-4  bg-white rounded-2xl flex flex-col items-center left-1/2 -translate-x-1/2 w-9/12">
+            <div className="absolute z-20 bottom-8 py-4 bg-white rounded-2xl flex flex-col items-center left-1/2 -translate-x-1/2 w-9/12">
               <h3 className="text-2xl text-[#071027] font-[600]">
                 Business Growth
               </h3>

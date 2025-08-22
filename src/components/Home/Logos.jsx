@@ -41,7 +41,7 @@ const Logos = () => {
   ];
 
   return (
-    <div className="px-20 w-fit mx-auto mb-10">
+    <div className="px-6 lg:px-20 w-fit mx-auto mb-10 hidden">
       <Horizontal width={"9/12"} />
       <Marquee
         className="text-white text-2xl font-semibold"
@@ -54,7 +54,7 @@ const Logos = () => {
               key={logo.id}
               src={logo.src}
               alt={`Logo ${logo.id}`}
-              className="w-[180px] h-24 object-contain"
+              className="w-[100px] h-20 lg:w-[180px] lg:h-24 object-contain"
             />
           </div>
         ))}

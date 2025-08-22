@@ -60,41 +60,50 @@ const Blogs = () => {
 
   return (
     <div className="flex flex-col gap-8 my-20">
-      <div className="flex flex-col gap-4 px-20">
+      <div className="flex flex-col gap-4 px-6 lg:px-20">
         <Badge first={"Our"} second={"Blogs"} />
-        <h2 className="text-6xl text-white w-9/12 leading-tight">
+        <h2 className="text-3xl lg:text-6xl text-white w-9/12 leading-tight">
           Transforming Ideas into Reality Tomorrow
         </h2>
-        <p className="text-[#888888] text-md">
+        <p className="text-[#888888] text-sm lg:text-md">
           IT Technology is a dynamic field encompassing the stu implementation
           an support, and management
         </p>
       </div>
       <Swiper
         slidesPerView={3.5}
-        centeredSlides={true}
+        // centeredSlides={true}
         spaceBetween={20}
         freeMode={false}
         autoplay={{ delay: 2000 }}
-        slidesOffsetBefore={0} // ফাকা বাদ
-        slidesOffsetAfter={0}
         modules={[Autoplay]}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3.5,
+          },
+        }}
         className="mySwiper w-full"
       >
-        <div className="bg-background blur-[80px] absolute -left-12 overflow-hidden z-10 w-44 h-[1000px] -top-8"></div>
-        <div className="bg-background blur-[80px] absolute -right-12 overflow-hidden z-10 w-44 h-[1000px] -top-8"></div>
+        <div className="max-sm:hidden bg-background blur-[80px] absolute -left-12 overflow-hidden z-10 w-44 h-[1000px] -top-8"></div>
+        <div className="max-sm:hidden bg-background blur-[80px] absolute -right-12 overflow-hidden z-10 w-44 h-[1000px] -top-8"></div>
         {blogPictures.map((p) => (
           <SwiperSlide className="relative" key={p.id}>
             <img
               src={p.image}
               alt=""
-              className="w-[370px] h-[370px] object-cover rounded-2xl z-10"
+              className="w-[370px] h-[370px] object-cover rounded-2xl relative z-10"
             />
-            <div className="absolute z-20 bottom-5 px-3 py-2 bg-white rounded-md flex gap-3 justify-between items-center left-1/2 -translate-x-1/2 w-11/12 mx-auto">
-              <h3 className="text-md text-[#071027] font-[500] rounded-full border border-[#121212]/20 px-4 py-1">
+            <div className="absolute z-20 bottom-5 px-3 py-2 bg-white rounded-md flex justify-between items-center left-1/2 -translate-x-1/2 w-11/12 mx-auto">
+              <h3 className="text-sm lg:text-md text-[#071027] font-[500] rounded-full border border-[#121212]/20 px-4 py-1">
                 {p.category}
               </h3>
-              <p className="text-md text-[#5E6770]">{p.date}</p>
+              <p className="text-sm lg:text-md text-[#5E6770]">{p.date}</p>
               <span className="bg-[#f3f7fb] rounded-md border border-gray-200 p-2">
                 <FaArrowRight size={18} />
               </span>

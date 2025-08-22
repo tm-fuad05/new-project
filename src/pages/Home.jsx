@@ -1,5 +1,5 @@
 import Banner from "../components/Home/Banner";
-import Contact from "../components/Home/Contact";
+import Contact from "../components/Shared/Contact";
 import Logos from "../components/Home/Logos";
 import OurPartners from "../components/Home/OurPartners";
 import Services from "../components/Home/Services";

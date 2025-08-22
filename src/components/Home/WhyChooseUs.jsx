@@ -44,7 +44,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-8 my-20 pt-10 pb-36 min-h-screen relative overflow-hidden">
+    <div className="max-sm:hidden flex flex-col gap-8 my-20 pt-10 pb-36 min-h-screen relative overflow-hidden">
       <Horizontal width={"7/12"} top={"0"} />
       {/*top corner Blurry lights */}
 
