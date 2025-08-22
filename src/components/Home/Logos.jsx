@@ -41,7 +41,7 @@ const Logos = () => {
   ];
 
   return (
-    <div className="px-6 lg:px-20 w-fit mx-auto mb-10 hidden">
+    <div className="px-6 lg:px-20 w-fit mx-auto mb-10">
       <Horizontal width={"9/12"} />
       <Marquee
         className="text-white text-2xl font-semibold"

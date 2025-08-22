@@ -101,7 +101,7 @@ const Testimonials = () => {
         ))}
       </div>
       <div className="my-10">
-        <Horizontal width={"7/12"} />
+        <Horizontal width={"9/12"} />
       </div>
     </div>
   );

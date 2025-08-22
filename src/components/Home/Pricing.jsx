@@ -121,7 +121,7 @@ const Pricing = () => {
         ))}
       </div>
       <div className="mt-10">
-        <Horizontal width={"7/12"} />
+        <Horizontal width={"9/12"} />
       </div>
     </div>
   );

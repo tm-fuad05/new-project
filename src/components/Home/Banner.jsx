@@ -35,13 +35,13 @@ const Banner = () => {
             We design and <span className="text-primary italic">deliver</span>{" "}
             secure, scalable IT solutions that just{" "}
             <span className="relative">
-              <span className="absolute w-full h-full bg-primary rotate-2 z-0"></span>
-              <span className="relative z-10 text-black font-semibold px-1 italic">
+              <span className="absolute w-full h-full bg-primary rotate-2 z-10"></span>
+              <span className="relative z-20 text-black font-semibold px-1 italic">
                 work.
               </span>
             </span>
           </h1>
-          <div className=" lg:absolute top-[320px] left-[240px] w-fit mx-auto lg:mt-0">
+          <div className=" lg:absolute top-[320px] left-[240px] w-fit mx-auto mt-4 lg:mt-0">
             <BubblePhotos />
           </div>
         </div>

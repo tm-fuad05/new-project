@@ -45,13 +45,10 @@ const WhyChooseUs = () => {
 
   return (
     <div className="max-sm:hidden flex flex-col gap-8 my-20 pt-10 pb-36 min-h-screen relative overflow-hidden">
-      <Horizontal width={"7/12"} top={"0"} />
+      <Horizontal width={"9/12"} top={"0"} />
       {/*top corner Blurry lights */}
-
       <div className="absolute z-20 blur-2xl opacity-15 top-[250px] -left-[200px] w-[300px] h-[300px] rounded-full bg-primary animate-pulse-slow" />
-
       {/*bottom corner Blurry lights */}
-
       <div className="absolute z-20 blur-xl opacity-15 bottom-[40px] right-[30px] w-[300px] h-[300px] rounded-full bg-primary animate-pulse-slow" />
 
       <Grid vertical={30} horizontal={22} />
@@ -114,7 +111,7 @@ const WhyChooseUs = () => {
         </div>
       </div>
 
-      <Horizontal width={"7/12"} bottom={"0"} />
+      <Horizontal width={"9/12"} bottom={"0"} />
     </div>
   );
 };

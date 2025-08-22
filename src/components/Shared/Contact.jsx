@@ -56,7 +56,7 @@ const Contact = () => {
   return (
     <div className="relative min-h-screen lg:min-h-[550px] overflow-hidden bg-[#030705]">
       <Grid vertical={7} horizontal={3} />
-      <Horizontal width={"7/12"} />
+      <Horizontal width={"9/12"} />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-10 justify-between px-6 lg:px-20 py-20 pb-44 absolute z-30">
         {/* Content */}
@@ -89,14 +89,14 @@ const Contact = () => {
         <div className="text-white flex flex-col gap-12">
           <form action="" className="flex flex-col gap-6">
             <p className="text-lg">Contact Info</p>
-            <div className="relative flex flex-col justify-bwtween gap-2">
+            <div className="relative flex flex-col lg:flex-row justify-bwtween gap-2">
               <MdOutlineMail className=" absolute top-3.5 left-5 text-[1.5rem] dark:text-slate-400 text-[#777777]" />
               <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="Enter your email to get started"
-                className=" border-[#e5eaf2]  lg:w-2/3 placeholder:text-slate-500 dark:border-slate-600 border rounded-full outline-none text-xs pl-12 pr-4 py-3 focus:border-[#3B9DF8] transition-colors duration-300"
+                className=" border-[#e5eaf2]  lg:w-2/3 placeholder:text-slate-500 dark:border-slate-600 border rounded-full outline-none text-xs pl-12 pr-4 py-4 focus:border-[#3B9DF8] transition-colors duration-300"
               />
               <div className="lg:w-1/3">
                 <ArrowButton
