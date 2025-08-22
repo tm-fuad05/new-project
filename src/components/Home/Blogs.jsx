@@ -59,8 +59,8 @@ const Blogs = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-8 my-20">
-      <div className="flex flex-col gap-4 px-6 lg:px-20">
+    <div className="flex flex-col gap-8 my-20 max-sm:px-6">
+      <div className="flex flex-col gap-4 lg:px-20">
         <Badge first={"Our"} second={"Blogs"} />
         <h2 className="text-3xl lg:text-6xl text-white w-9/12 leading-tight">
           Transforming Ideas into Reality Tomorrow

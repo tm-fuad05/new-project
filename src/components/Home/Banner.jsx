@@ -31,22 +31,22 @@ const Banner = () => {
           second={"Infinite possibilities."}
         />
         <div>
-          <h1 className="text-white text-4xl lg:text-7xl leading-normal w-9/12 mx-auto">
+          <h1 className="text-white text-4xl lg:text-7xl leading-normal w-11/12 lg:w-9/12 mx-auto">
             We design and <span className="text-primary italic">deliver</span>{" "}
             secure, scalable IT solutions that just{" "}
             <span className="relative">
-              <span className="absolute w-full h-full bg-primary rotate-2  z-0"></span>
+              <span className="absolute w-full h-full bg-primary rotate-2 z-0"></span>
               <span className="relative z-10 text-black font-semibold px-1 italic">
                 work.
               </span>
             </span>
           </h1>
-          <div className=" lg:absolute top-[320px] left-[240px] w-fit mx-auto mt-7 lg:mt-0">
+          <div className=" lg:absolute top-[320px] left-[240px] w-fit mx-auto lg:mt-0">
             <BubblePhotos />
           </div>
         </div>
-
-        <div className="flex  gap-3 lg:gap-7">
+        {/* Buttons */}
+        <div className="flex flex-col lg:flex-row gap-3 lg:gap-7">
           <ArrowButton
             bgColor={"white"}
             arrowColor={"primary"}

@@ -70,7 +70,7 @@ const Contact = () => {
               us today
             </h1>{" "}
           </div>
-          <p className="text-lg ">
+          <p className="text-sm lg:text-lg ">
             Contact us today to schedule a consultation and discover how we can
             help your business thrive.
           </p>
