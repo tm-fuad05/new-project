@@ -37,7 +37,7 @@ const SuccessStory = () => {
             />
           </div>
           {/* Card */}
-          <div className="grid grid-cols-2 gap-5 w-11/12">
+          <div className="grid grid-cols-2 gap-5 lg:w-11/12">
             {cards.map((card) => (
               <div
                 key={card.id}
